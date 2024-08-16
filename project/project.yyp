@@ -26,6 +26,8 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Notes","folderPath":"folders/Notes.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Extensions","folderPath":"folders/Extensions.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Particle Systems","folderPath":"folders/Particle Systems.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"general","folderPath":"folders/Sprites/general.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"general","folderPath":"folders/Objects/general.yy",},
   ],
   "IncludedFiles": [],
   "isEcma": false,
@@ -34,10 +36,12 @@
     "IDEVersion": "2023.11.1.129",
   },
   "resources": [
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"control","path":"objects/control/control.yy",},},
+    {"id":{"name":"spr_object","path":"sprites/spr_object/spr_object.yy",},},
+    {"id":{"name":"rm_room","path":"rooms/rm_room/rm_room.yy",},},
   ],
   "RoomOrderNodes": [
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"rm_room","path":"rooms/rm_room/rm_room.yy",},},
   ],
   "templateType": "game",
   "TextureGroups": [
