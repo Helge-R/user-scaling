@@ -1,17 +1,20 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "scale",
+  "name": "lso_app_select",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "UI",
-    "path": "folders/Objects/game/UI.yy",
+    "name": "loop",
+    "path": "folders/Objects/game/loop.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "loop_state_object",
+    "path": "objects/loop_state_object/loop_state_object.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
