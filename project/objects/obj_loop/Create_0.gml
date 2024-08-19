@@ -26,6 +26,7 @@ time_source = time_source_create(time_source_game, 1, time_source_units_seconds,
 	round_step = 1;
 	game_round += 1;
 	state = states.action;
+	scr_create_tokens();
 	
 });
 

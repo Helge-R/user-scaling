@@ -11,10 +11,14 @@
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
     {"name":"general","order":1,"path":"folders/Sprites/general.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
+    {"name":"game","order":3,"path":"folders/Sprites/game.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"curve_1","order":11,"path":"animcurves/curve_1/curve_1.yy",},
+    {"name":"obj_perk","order":3,"path":"objects/obj_perk/obj_perk.yy",},
     {"name":"rm_game","order":1,"path":"rooms/rm_game/rm_game.yy",},
+    {"name":"obj_token","order":2,"path":"objects/obj_token/obj_token.yy",},
+    {"name":"TODO","order":12,"path":"notes/TODO/TODO.yy",},
     {"name":"obj_loop","order":1,"path":"objects/obj_loop/obj_loop.yy",},
   ],
 }
