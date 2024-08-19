@@ -20,5 +20,6 @@
     {"name":"obj_token","order":2,"path":"objects/obj_token/obj_token.yy",},
     {"name":"TODO","order":12,"path":"notes/TODO/TODO.yy",},
     {"name":"obj_loop","order":1,"path":"objects/obj_loop/obj_loop.yy",},
+    {"name":"fnt_info","order":1,"path":"fonts/fnt_info/fnt_info.yy",},
   ],
 }

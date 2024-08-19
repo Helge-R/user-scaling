@@ -43,6 +43,7 @@
     {"id":{"name":"TODO","path":"notes/TODO/TODO.yy",},},
     {"id":{"name":"obj_loop","path":"objects/obj_loop/obj_loop.yy",},},
     {"id":{"name":"loop","path":"scripts/loop/loop.yy",},},
+    {"id":{"name":"fnt_info","path":"fonts/fnt_info/fnt_info.yy",},},
     {"id":{"name":"rm_init","path":"rooms/rm_init/rm_init.yy",},},
   ],
   "RoomOrderNodes": [

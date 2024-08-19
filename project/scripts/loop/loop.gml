@@ -30,13 +30,13 @@ function scr_get_random_token() {
 }
 
 global.tokens = { // names of each token in game
-	aaa : 0,
-	bbb : 1,
-	ccc : 2,
-	ddd : 3,
-	eee : 4,
-	fff : 5,
-	ggg : 6
+	aaa : {ind : 0, info : "+8 Credits"},
+	bbb : {ind : 1, info : "+1 Scale"},
+	ccc : {ind : 2, info : "+2 Credits for each yellow gem"},
+	ddd : {ind : 3, info : "+2 Credits for each red gem"},
+	eee : {ind : 4, info : "+2 Credits for each blue gem"},
+	fff : {ind : 5, info : "Retrigger all modules"},
+	ggg : {ind : 6, info : "Generate a random gem"}
 }
 
 global.arr_tokens_remaining = struct_get_names(global.tokens);	
