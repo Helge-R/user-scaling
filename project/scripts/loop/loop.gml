@@ -2,6 +2,29 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 verfügbar
 
 randomize();
+global.tokens = { // names of each token in game
+	aaa : { ind : 0, action : function(_val) { return _val + 8 }, info : "+8 Credits"},
+	bbb : { ind : 1, action : function(_val) { return _val * 10 }, info : "+1 Scale"},
+	ccc : { ind : 2, action : function(_val) { return _val + 2 }, info : "+2 Credits for each yellow gem"},
+	ddd : { ind : 3, action : function(_val) { return _val + 2 }, info : "+2 Credits for each red gem"},
+	eee : { ind : 4, action : function(_val) { return _val + 2 }, info : "+2 Credits for each blue gem"},
+	fff : { ind : 5, action : function(_val) { scr_retrigger(); return obj_scale.value; }, info : "Retrigger all modules"},
+	ggg : { ind : 6, action : function(_val) { 
+								array_push(global.gems_owned, instance_create_layer(0, 0, "objects", obj_gem));
+								for (var i = 0; i < array_length(global.gems_owned); i++) {
+									var _gem = global.gems_owned[i];
+									_gem.x = 10 + i * 20;
+									_gem.y = 100;
+								}
+								return obj_scale.value; }, 
+					 info : "Generate a random gem"}
+}
+global.tokens_owned = []; // store the instances of owned tokens
+global.gems_owned = [];
+global.arr_tokens_remaining = struct_get_names(global.tokens);	
+global.arr_tokens_remaining_shop = struct_get_names(global.tokens);	
+global.tokens_in_shop = [];
+global.token_was_chosen = false;
 
 function scr_check_action_finished() {
 	return global.token_was_chosen;
@@ -29,21 +52,18 @@ function scr_get_random_token() {
 	return _token;
 }
 
-global.tokens = { // names of each token in game
-	aaa : {ind : 0, info : "+8 Credits"},
-	bbb : {ind : 1, info : "+1 Scale"},
-	ccc : {ind : 2, info : "+2 Credits for each yellow gem"},
-	ddd : {ind : 3, info : "+2 Credits for each red gem"},
-	eee : {ind : 4, info : "+2 Credits for each blue gem"},
-	fff : {ind : 5, info : "Retrigger all modules"},
-	ggg : {ind : 6, info : "Generate a random gem"}
+function scr_retrigger() {
+	
 }
 
-global.arr_tokens_remaining = struct_get_names(global.tokens);	
-global.arr_tokens_remaining_shop = struct_get_names(global.tokens);	
+function scr_update_power_value() {
+	obj_scale.value += 1;
+	for (var i = 0; i < array_length(global.tokens_owned); i++) {
+		
+		var _struct = global.tokens[$ global.tokens_owned[i].token];	
+		obj_scale.value = _struct.action(obj_scale.value);
+	}
+}
 
-global.tokens_owned = []; // store the instances of owned tokens
 
-global.tokens_in_shop = [];
 
-global.token_was_chosen = false;

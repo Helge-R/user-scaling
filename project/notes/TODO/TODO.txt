@@ -1,5 +1,4 @@
----- 3 out of 7 perks appear in shop
----- show information what each perk does
----- add the right perk to owned perks
----- show what each perk does by hovering it
+
 - apply perk effects to actual scaling number
+- visually show effects at module
+- visually show scaling numbers at number

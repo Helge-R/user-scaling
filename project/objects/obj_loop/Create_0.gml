@@ -14,7 +14,7 @@ state = states.addition;
 
 time_source = time_source_create(time_source_game, 1, time_source_units_seconds, function() {
 	
-	obj_scale.value += addition_value;
+	scr_update_power_value();
 	
 	round_step += 1;
 	
